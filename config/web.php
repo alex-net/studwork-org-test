@@ -48,11 +48,11 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'notes/new'=>'note/create',
-                'notes/<id:\d+>/update'=>'note/update',
-                'notes/<id:\d+>/kill'=>'note/drop',
-                'notes/<id:\d+>'=>'note/view',
-                'notes'=>'note/index',
+                'notes/new' => 'note/create',
+                'notes/<id:\d+>/update' => 'note/update',
+                'notes/<id:\d+>/kill' => 'note/drop',
+                'notes/<id:\d+>' => 'note/view',
+                'notes' => 'note/index',
             ],
         ],
         
@@ -66,7 +66,7 @@ if (YII_ENV_DEV) {
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['127.0.0.1', '::1','94.190.41.119'],
+        'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 
     $config['bootstrap'][] = 'gii';
